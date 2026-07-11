@@ -15,7 +15,7 @@ This repository contains a comprehensive, two-part machine learning workflow foc
 ## 📊 Part 1: Deep Exploratory Analysis & Feature Engineering
 In the first phase (Energy_Consumption_EDA.ipynb), we thoroughly investigated the dataset structure, addressed data quality issues, and engineered key temporal and electrical domain features:
 
-Temporal Engineering: Extracted hour_of_day, day_of_week, month, and an is_weekend binary indicator from the raw timestamp.
+1. Temporal Engineering: Extracted hour_of_day, day_of_week, month, and an is_weekend binary indicator from the raw timestamp.
 
 Domain-Specific Features: Engineered Power_Factor_Ratio by mapping leading vs. lagging current power factor metrics.
 
@@ -23,7 +23,7 @@ Target Labeling: Created a High_Load indicator to mark observations above the 75
 
 Outlier Mitigation & Cleaning: Identified operational spikes using the Interquartile Range (IQR) method and safely handled missing value points via median imputation to safeguard downstream models.
 
-Key EDA Insights
+## Key EDA Insights
 The Power Factor Connection: A strong correlation heatmap profile revealed that power factor metrics (Lagging_Current_Power_Factor and Leading_Current_Power_Factor) serve as primary linear indicators of load intensity.
 
 Temporal Cyclicality: Energy usage exhibits definitive cyclical curves, peaking strongly during standard daytime manufacturing operational shifts and plunging overnight.
