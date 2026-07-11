@@ -30,15 +30,15 @@ In the first phase (Energy_Consumption_EDA.ipynb), we thoroughly investigated th
 
 **Load Type Discrepancies:** Average kilowatt-hour consumption exhibits clean, step-like increases when transitioning sequentially across Light_Load, Medium_Load, and Maximum_Load boundaries.
 
-# 🤖 Part 2: Baseline Regression Modeling
+## 🤖 Part 2: Baseline Regression Modeling
 In the second phase (Energy_Consumption_Models.ipynb), we built an end-to-end predictive modeling pipeline. Categorical columns were transformed using One-Hot Encoding to maintain accurate structural relationships without imposing false ordinal hierarchies. The dataset was partitioned into an 80/20 train-test split using a fixed random_state=42 for exact reproducibility.
 
 We trained and contrasted four diverse regression frameworks:
 
-Linear Regression
+1. Linear Regression
 
-Ridge Regression
+2. Ridge Regression
 
-Decision Tree Regressor
+3. Decision Tree Regressor
 
-Random Forest Regressor
+4. Random Forest Regressor
