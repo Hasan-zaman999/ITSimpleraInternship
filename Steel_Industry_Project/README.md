@@ -4,9 +4,12 @@ This repository contains a comprehensive, two-part machine learning workflow foc
 
 ## 📁 Repository Structure
 
+## 📁 Repository Structure
+
 ```text
 ├── data/
-│   └── steel_industry_energy_consumption.csv   # Raw dataset folder
+│   ├── dataset_part1.csv                       # First raw data file
+│   └── dataset_part2.csv                       # Second raw data file
 ├── Energy_Consumption_EDA.ipynb                # Part 1: Exploratory Data Analysis & Feature Engineering
 ├── Energy_Consumption_Models.ipynb             # Part 2: Baseline Regression Modeling
 ├── requirement.txt                             # Project dependencies
