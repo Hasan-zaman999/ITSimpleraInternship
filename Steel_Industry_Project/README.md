@@ -42,9 +42,3 @@ We trained and contrasted four diverse regression frameworks:
 3. Decision Tree Regressor
 
 4. Random Forest Regressor
-
-Regression Model,Test MAE,Test RMSE,Test R-squared,5-Fold CV Mean RMSE,Status / Evaluation
-Linear Regression,2.6339,4.1460,0.9849,4.6048,Underfitting; struggles with non-linear variations.
-Ridge Regression,4.3604,6.2666,0.9655,6.6866,Underfitting; linear regularization bounds are too rigid.
-Decision Tree,0.5500,1.5182,0.9980,2.6124,Severe Overfitting; memorizes specific training slices.
-Random Forest,0.3577,1.0318,0.9991,2.2127,Best Model; exceptional generalization & stability.
