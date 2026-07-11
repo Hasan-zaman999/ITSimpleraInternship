@@ -17,11 +17,11 @@ In the first phase (Energy_Consumption_EDA.ipynb), we thoroughly investigated th
 
 1. Temporal Engineering: Extracted hour_of_day, day_of_week, month, and an is_weekend binary indicator from the raw timestamp.
 
-Domain-Specific Features: Engineered Power_Factor_Ratio by mapping leading vs. lagging current power factor metrics.
+2. Domain-Specific Features: Engineered Power_Factor_Ratio by mapping leading vs. lagging current power factor metrics.
 
-Target Labeling: Created a High_Load indicator to mark observations above the 75th percentile of energy usage.
+3. Target Labeling: Created a High_Load indicator to mark observations above the 75th percentile of energy usage.
 
-Outlier Mitigation & Cleaning: Identified operational spikes using the Interquartile Range (IQR) method and safely handled missing value points via median imputation to safeguard downstream models.
+4. Outlier Mitigation & Cleaning: Identified operational spikes using the Interquartile Range (IQR) method and safely handled missing value points via median imputation to safeguard downstream models.
 
 ## Key EDA Insights
 The Power Factor Connection: A strong correlation heatmap profile revealed that power factor metrics (Lagging_Current_Power_Factor and Leading_Current_Power_Factor) serve as primary linear indicators of load intensity.
