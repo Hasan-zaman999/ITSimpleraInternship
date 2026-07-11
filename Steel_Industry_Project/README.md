@@ -12,7 +12,7 @@ This repository contains a comprehensive, two-part machine learning workflow foc
 ├── requirement.txt                             # Project dependencies
 └── readme.md                                   # Project documentation (this file)
 ```
-📊 Part 1: Deep Exploratory Analysis & Feature Engineering.
+## 📊 Part 1: Deep Exploratory Analysis & Feature Engineering
 In the first phase (Energy_Consumption_EDA.ipynb), we thoroughly investigated the dataset structure, addressed data quality issues, and engineered key temporal and electrical domain features:
 
 Temporal Engineering: Extracted hour_of_day, day_of_week, month, and an is_weekend binary indicator from the raw timestamp.
