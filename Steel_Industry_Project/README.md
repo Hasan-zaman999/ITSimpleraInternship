@@ -43,7 +43,7 @@ We trained and contrasted four diverse regression frameworks:
 
 4. Random Forest Regressor
 
-##📈 Model Evaluation Metrics
+## 📈 Model Evaluation Metrics
 
 | Regression Model | Test MAE | Test RMSE | Test R-squared | 5-Fold CV Mean RMSE | Status / Evaluation |
 | :--- | :---: | :---: | :---: | :---: | :--- |
