@@ -24,7 +24,7 @@ In the first phase (Energy_Consumption_EDA.ipynb), we thoroughly investigated th
 4. Outlier Mitigation & Cleaning: Identified operational spikes using the Interquartile Range (IQR) method and safely handled missing value points via median imputation to safeguard downstream models.
 
 ## Key EDA Insights
-The Power Factor Connection: A strong correlation heatmap profile revealed that power factor metrics (Lagging_Current_Power_Factor and Leading_Current_Power_Factor) serve as primary linear indicators of load intensity.
+**The Power Factor Connection:** A strong correlation heatmap profile revealed that power factor metrics (Lagging_Current_Power_Factor and Leading_Current_Power_Factor) serve as primary linear indicators of load intensity.
 
 Temporal Cyclicality: Energy usage exhibits definitive cyclical curves, peaking strongly during standard daytime manufacturing operational shifts and plunging overnight.
 
