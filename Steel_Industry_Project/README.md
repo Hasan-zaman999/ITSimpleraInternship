@@ -26,11 +26,11 @@ In the first phase (Energy_Consumption_EDA.ipynb), we thoroughly investigated th
 ## Key EDA Insights
 **The Power Factor Connection:** A strong correlation heatmap profile revealed that power factor metrics (Lagging_Current_Power_Factor and Leading_Current_Power_Factor) serve as primary linear indicators of load intensity.
 
-Temporal Cyclicality: Energy usage exhibits definitive cyclical curves, peaking strongly during standard daytime manufacturing operational shifts and plunging overnight.
+**Temporal Cyclicality:** Energy usage exhibits definitive cyclical curves, peaking strongly during standard daytime manufacturing operational shifts and plunging overnight.
 
-Load Type Discrepancies: Average kilowatt-hour consumption exhibits clean, step-like increases when transitioning sequentially across Light_Load, Medium_Load, and Maximum_Load boundaries.
+**Load Type Discrepancies:** Average kilowatt-hour consumption exhibits clean, step-like increases when transitioning sequentially across Light_Load, Medium_Load, and Maximum_Load boundaries.
 
-🤖 Part 2: Baseline Regression Modeling
+# 🤖 Part 2: Baseline Regression Modeling
 In the second phase (Energy_Consumption_Models.ipynb), we built an end-to-end predictive modeling pipeline. Categorical columns were transformed using One-Hot Encoding to maintain accurate structural relationships without imposing false ordinal hierarchies. The dataset was partitioned into an 80/20 train-test split using a fixed random_state=42 for exact reproducibility.
 
 We trained and contrasted four diverse regression frameworks:
