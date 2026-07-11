@@ -11,3 +11,4 @@ This repository contains a comprehensive, two-part machine learning workflow foc
 ├── Energy_Consumption_Models.ipynb             # Part 2: Baseline Regression Modeling
 ├── requirement.txt                             # Project dependencies
 └── readme.md                                   # Project documentation (this file)
+📊 Part 1: Deep Exploratory Analysis & Feature Engineering
