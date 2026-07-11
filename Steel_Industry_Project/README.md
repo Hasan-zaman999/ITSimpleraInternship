@@ -43,6 +43,7 @@ We trained and contrasted four diverse regression frameworks:
 
 4. Random Forest Regressor
 
+
 ## 📈 Model Evaluation Metrics
 
 | Regression Model | Test MAE | Test RMSE | Test R-squared | 5-Fold CV Mean RMSE | Status / Evaluation |
@@ -51,3 +52,11 @@ We trained and contrasted four diverse regression frameworks:
 | **Ridge Regression** | 4.3604 | 6.2666 | 0.9655 | 6.6866 | Underfitting; linear regularization bounds are too rigid. |
 | **Decision Tree** | 0.5500 | 1.5182 | 0.9980 | 2.6124 | Severe Overfitting; memorizes specific training slices. |
 | **Random Forest** | **0.3577** | **1.0318** | **0.9991** | **2.2127** | **Best Model; exceptional generalization & stability.** |
+
+
+## Key Modeling Takeaways
+**Non-Linear Dominance:** Linear and Ridge configurations fail to successfully model severe industrial spikes. Tree-based architectures capture these complex interaction surfaces seamlessly.
+
+**Overfitting Discovery:** Single Decision Trees exhibit high variance—their performance degrades noticeably when subjected to 5-Fold Cross-Validation (RMSE increases from 1.5182 to 2.6124).
+
+**The Selected Path Forward:** The Random Forest Regressor yields the lowest generalization error profile. Combining predictions from an ensemble of estimators successfully penalizes high-variance tree fluctuations, making it the superior architecture for factory load deployment.
