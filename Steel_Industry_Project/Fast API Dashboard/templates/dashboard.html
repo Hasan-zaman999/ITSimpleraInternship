@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-12 mb-4">
+        <h2>Operational Data Insights</h2>
+        <p class="text-muted">Exploratory data analysis visualizations reflecting historical factory behavior.</p>
+    </div>
+    
+    <!-- Row 1: Load Type and Weekly Trends -->
+    <div class="col-md-6 mb-4">
+        <div class="card p-3">
+            <img src="/static/load_type_chart.png" class="img-fluid rounded" alt="Load Type Analysis">
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card p-3">
+            <img src="/static/weekly_trend_chart.png" class="img-fluid rounded" alt="Weekly Trend Analysis">
+        </div>
+    </div>
+    
+    <!-- Row 2: Heatmap Core Alignment -->
+    <div class="col-md-6 mx-auto mb-4">
+        <div class="card p-3">
+            <h5 class="text-center mb-2">Feature Relational Dynamics</h5>
+            <img src="/static/correlation_heatmap.png" class="img-fluid rounded" alt="Correlation Matrix">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card p-4 mb-5">
+            <h3 class="mb-3 text-center">Energy Consumption Estimator</h3>
+            <hr>
+            
+            {% if prediction is not none %}
+            <div class="alert alert-success text-center fs-4 fw-bold mb-4" role="alert">
+                Estimated Usage: {{ prediction }} kWh
+            </div>
+            {% endif %}
+
+            <form action="/predict" method="post">
+                <h5 class="text-secondary mb-3">Continuous Engineering Indicators</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Lagging Reactive Power (kVarh)</label>
+                        <input type="number" step="any" name="lagging_reactive" class="form-control" required value="4.5">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Leading Reactive Power (kVarh)</label>
+                        <input type="number" step="any" name="leading_reactive" class="form-control" required value="2.1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">CO2 Carbon Footprint (t)</label>
+                        <input type="number" step="any" name="co2" class="form-control" required value="0.01">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Lagging Power Factor</label>
+                        <input type="number" step="any" name="lagging_pf" class="form-control" required value="75.2">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Leading Power Factor</label>
+                        <input type="number" step="any" name="leading_pf" class="form-control" required value="91.4">
+                    </div>
+                </div>
+
+                <h5 class="text-secondary mt-3 mb-3">Time & Feature Engineered Metrics</h5>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">NSM (Seconds from Midnight)</label>
+                        <input type="number" step="any" name="nsm" class="form-control" required value="32400">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Hour of Day (0-23)</label>
+                        <input type="number" min="0" max="23" name="hour_of_day" class="form-control" required value="9">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Day of Week Index (0-6)</label>
+                        <input type="number" min="0" max="6" name="extracted_day_of_week" class="form-control" required value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Month (1-12)</label>
+                        <input type="number" min="1" max="12" name="month" class="form-control" required value="1">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Is Weekend Flag (0 or 1)</label>
+                        <input type="number" min="0" max="1" name="is_weekend" class="form-control" required value="0">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Power Factor Ratio</label>
+                        <input type="number" step="any" name="pf_ratio" class="form-control" required value="0.82">
+                    </div>
+                </div>
+
+                <h5 class="text-secondary mt-3 mb-3">Operational Context Dropdowns</h5>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Week Status</label>
+                        <select name="week_status" class="form-select">
+                            <option value="Weekday">Weekday</option>
+                            <option value="Weekend">Weekend</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Operational Load Type</label>
+                        <select name="load_type" class="form-select">
+                            <option value="Light_Load">Light Load</option>
+                            <option value="Medium_Load">Medium Load</option>
+                            <option value="Maximum_Load">Maximum Load</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Day of Week</label>
+                        <select name="day_of_week" class="form-select">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100 mt-3 py-2 fs-5">Calculate Inference</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="p-5 mb-4 bg-white rounded-3 border">
+    <div class="container-fluid py-5 text-center">
+        <h1 class="display-5 fw-bold">Steel Industry Energy Management Portal</h1>
+        <p class="col-md-8 fs-4 mx-auto text-muted">
+            Welcome to the operational hub. This system leverages advanced Dimensionality Reduction (PCA) 
+            and Random Forest variants to optimize power predictive intelligence.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+            <a href="/dashboard" class="btn btn-primary btn-lg px-4 gap-3">View Insights Dashboard</a>
+            <a href="/predict" class="btn btn-outline-secondary btn-lg px-4">Run Inference Engine</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
