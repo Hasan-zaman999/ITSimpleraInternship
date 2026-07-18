@@ -24,7 +24,8 @@ The repository is structured to mirror professional software engineering layouts
 │   └── predict.html                   # Live inference calculation engine
 ├── main.py                            # Production FastAPI server orchestration logic
 ├── requirements.txt                   # Curated deployment dependencies
-└── README.md                          # Project documentation / write-up (This File)'''
+└── README.md                          # Project documentation / write-up (This File)
+'''
 
 ## ⚡ Key Architecture Components
 ## 📈 Part 1: Dimensionality Reduction Pipeline (PCA)
