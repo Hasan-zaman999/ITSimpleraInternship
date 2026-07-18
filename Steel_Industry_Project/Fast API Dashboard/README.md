@@ -30,18 +30,18 @@ The repository is structured to mirror professional software engineering layouts
 ## ⚡ Key Architecture Components
 ## 📈 Part 1: Dimensionality Reduction Pipeline (PCA)
 
-** *Robust Feature Engineering:** Implements time-series extracted variables (NSM, hour_of_day, is_weekend, Power_Factor_Ratio) alongside categorical one-hot encoded operations.
+**Robust Feature Engineering:** Implements time-series extracted variables (NSM, hour_of_day, is_weekend, Power_Factor_Ratio) alongside categorical one-hot encoded operations.
 
-** *Strict Data Leaking Controls:** Enforces distinct train/test pipelines, ensuring scale parameters are computed exclusively on the training matrix.
+***Strict Data Leaking Controls:** Enforces distinct train/test pipelines, ensuring scale parameters are computed exclusively on the training matrix.
 
-Principal Component Analysis: Dynamically calculates component variance thresholds to compress high-dimensional feature spaces down to the optimal vectors representing 95% data variance.
+***Principal Component Analysis:** Dynamically calculates component variance thresholds to compress high-dimensional feature spaces down to the optimal vectors representing 95% data variance.
 
-Model Serialization: Exports the final sequential execution chain (StandardScaler -> PCA -> RandomForestRegressor) into a highly optimized binary file via joblib.
+***Model Serialization:** Exports the final sequential execution chain (StandardScaler -> PCA -> RandomForestRegressor) into a highly optimized binary file via joblib.
 
 ## 🌐 Part 2: FastAPI Production Server
 
-Asynchronous Execution Endpoints: Utilizes FastAPI to parse, process, and return live ML calculations instantly.
+***Asynchronous Execution Endpoints:** Utilizes FastAPI to parse, process, and return live ML calculations instantly.
 
-Dynamic Sparse Matrix Mapping: Intercepts raw browser form submissions and maps inputs directly back to the exact dimensional orientation (20-column layout signature) the model demands.
+***Dynamic Sparse Matrix Mapping:** Intercepts raw browser form submissions and maps inputs directly back to the exact dimensional orientation (20-column layout signature) the model demands.
 
-Template Render Processing: Implements Jinja2 rendering environments to transition analytics into beautiful, web-accessible dashboard sections.
+***Template Render Processing:** Implements Jinja2 rendering environments to transition analytics into beautiful, web-accessible dashboard sections.
