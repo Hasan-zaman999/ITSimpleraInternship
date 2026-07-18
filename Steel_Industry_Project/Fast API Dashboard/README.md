@@ -30,9 +30,9 @@ The repository is structured to mirror professional software engineering layouts
 ## ⚡ Key Architecture Components
 ## 📈 Part 1: Dimensionality Reduction Pipeline (PCA)
 
-* Robust Feature Engineering: Implements time-series extracted variables (NSM, hour_of_day, is_weekend, Power_Factor_Ratio) alongside categorical one-hot encoded operations.
+** * Robust Feature Engineering: **Implements time-series extracted variables (NSM, hour_of_day, is_weekend, Power_Factor_Ratio) alongside categorical one-hot encoded operations.
 
-Strict Data Leaking Controls: Enforces distinct train/test pipelines, ensuring scale parameters are computed exclusively on the training matrix.
+** *Strict Data Leaking Controls:** Enforces distinct train/test pipelines, ensuring scale parameters are computed exclusively on the training matrix.
 
 Principal Component Analysis: Dynamically calculates component variance thresholds to compress high-dimensional feature spaces down to the optimal vectors representing 95% data variance.
 
