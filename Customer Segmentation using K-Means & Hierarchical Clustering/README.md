@@ -156,8 +156,9 @@ The notebook includes the following visualizations:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/customer-segmentation.git
-cd customer-segmentation
+git clone https://github.com/Hasan-zaman999/ITSimpleraInternship.git
+
+cd "ITSimpleraInternship/Customer Segmentation using K-Means & Hierarchical Clustering"
 ```
 
 ### Install dependencies
@@ -177,17 +178,16 @@ jupyter notebook notebooks/week4_clustering.ipynb
 ## Repository Structure
 
 ```text
-customer-segmentation/
+Customer Segmentation using K-Means & Hierarchical Clustering/
 │
-├── data/
+├── Data/
 │   └── CC GENERAL.csv
 │
 ├── notebooks/
 │   └── week4_clustering.ipynb
 │
 ├── README.md
-├── requirements.txt
-└── LICENSE (optional)
+└── requirements.txt
 ```
 
 ---
@@ -206,11 +206,7 @@ customer-segmentation/
 
 **Hasan Zaman**
 
-- QC Analyst
-- AI/ML Intern
-- Chemistry Graduate
-- Machine Learning Enthusiast
+QC Analyst | AI/ML Intern | Chemistry Graduate | Machine Learning Enthusiast
 
-**LinkedIn:** https://www.linkedin.com/in/your-profile
-
-**GitHub:** https://github.com/your-username
+- **GitHub:** https://github.com/Hasan-zaman999/
+- **LinkedIn:** https://www.linkedin.com/in/hasan-z-aa1b85293/
