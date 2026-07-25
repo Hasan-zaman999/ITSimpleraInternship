@@ -1,10 +1,10 @@
 # Online Retail II - Exploratory Data Analysis (EDA)
 
 ## Project Overview
-This repository contains a full step-by-step Exploratory Data Analysis (EDA) on the **Online Retail II Dataset** hosted by the UCI Machine Learning Repository[span_3](start_span)[span_3](end_span). The dataset covers real transaction data from a UK-based online retailer between 2009 and 2011[span_4](start_span)[span_4](end_span). The objective of this task is to understand customer purchasing behaviors, spot data quality issues, identify sales trends over time, and provide actionable business insights before investing in a machine learning recommendation system[span_5](start_span)[span_5](end_span).
+This repository contains a full step-by-step Exploratory Data Analysis (EDA) on the **Online Retail II Dataset** hosted by the UCI Machine Learning Repository. The dataset covers real transaction data from a UK-based online retailer between 2009 and 2011. The objective of this task is to understand customer purchasing behaviors, spot data quality issues, identify sales trends over time, and provide actionable business insights before investing in a machine learning recommendation system.
 
 ## Key Deliverables
-* **Google Colab Notebook:** Contains fully structured, cleanly documented code written in sequential cells[span_6](start_span)[span_6](end_span).
+* **Google Colab Notebook:** Contains fully structured, cleanly documented code written in sequential cells.
 * **Business Insights:** Comprehensive strategic takeaways evaluating data anomalies, domestic market concentration, and product performance metrics.
 
 ---
@@ -14,7 +14,7 @@ This repository contains a full step-by-step Exploratory Data Analysis (EDA) on 
 ### 1. Data Loading & Profiling
 * **Shape:** 525,461 rows and 8 initial features.
 * **Attributes Studied:** Invoice number, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, and Country.
-* **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `seaborn`[span_7](start_span)[span_7](end_span).
+* **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `seaborn`.
 
 ### 2. Data Quality & Profiling Check
 * **Missing Values:** Identified major gaps in `Customer ID` (20.54% missing rows) and minor gaps in `Description` (0.56% missing rows).
@@ -42,5 +42,5 @@ This repository contains a full step-by-step Exploratory Data Analysis (EDA) on 
 ## How to Run the Notebook
 1. Open Google Colab.
 2. Upload the `.ipynb` file from this repository.
-3. Run the cells sequentially from top to bottom[span_8](start_span)[span_8](end_span). The dataset will pull automatically from the source URL[span_9](start_span)[span_9](end_span).
+3. Run the cells sequentially from top to bottom. The dataset will pull automatically from the source URL.
 # ITSimpleraInternship
