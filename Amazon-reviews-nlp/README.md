@@ -145,7 +145,7 @@ The Logistic Regression classifier trained on the `CountVectorizer` feature set 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/Amazon-reviews-nlp.git
+git clone https://github.com/Hasan-zaman999/ITSimpleraInternship/tree/main/Amazon-reviews-nlp.git
 cd Amazon-reviews-nlp
 ```
 
