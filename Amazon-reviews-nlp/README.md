@@ -129,15 +129,15 @@ The Logistic Regression classifier trained on the `CountVectorizer` feature set 
 
 | Metric | Score |
 | :--- | :--- |
-| **Model Accuracy** | **~93.5%** |
-| **Positive Class (1) Precision** | **0.95** |
-| **Positive Class (1) Recall** | **0.98** |
+| **Model Accuracy** | **~93.17%** |
+| **Positive Class (1) Precision** | **0.97** |
+| **Positive Class (1) Recall** | **0.95** |
 | **Positive Class (1) F1-Score** | **0.96** |
-| **Negative Class (0) Precision** | **0.72** |
-| **Negative Class (0) Recall** | **0.51** |
-| **Negative Class (0) F1-Score** | **0.60** |
+| **Negative Class (0) Precision** | **0.56** |
+| **Negative Class (0) Recall** | **0.69** |
+| **Negative Class (0) F1-Score** | **0.62** |
 
-> **Note on Imbalance**: Due to the initial ~91.8% positive class skew, macro metrics prioritize monitoring negative review recall and precision alongside overall accuracy.
+> **Note on Imbalance**: Due to the severe positive class skew (~91.8%), the overall accuracy is misleadingly high. While the model performs exceptionally well on the positive class, its precision for negative class drops significantly to 56.5%, meaning nearly half of the predicted negative reviews are false alarms.
 
 ---
 
