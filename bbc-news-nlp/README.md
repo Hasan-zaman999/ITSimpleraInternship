@@ -59,7 +59,7 @@ The dataset provides a rich ground for exploring news content, enabling classifi
 
 ## Workflow Diagram
 
-```mermaid
+```
 graph TD
     A[Raw BBC News Data] --> B{Data Preprocessing}
     B --> C[Cleaned & Combined Text]
